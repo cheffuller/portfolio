@@ -4,11 +4,15 @@ h1 {
     font-weight: normal;
 }
 
-div.header {
-    background-color: white;
+header {
+    display: flex;
 }
 
-.container{
+nav { 
+    margin: auto 0 auto auto;
+}
+
+.container {
     padding-right: 0px 0;
     margin: 0 auto;
     height: 100px;
@@ -38,7 +42,6 @@ div.header {
 .item:hover{
     flex: 7;
 }
-
 
 .item-1 { 
     background-image: url(img/IMG_1539.JPG);
@@ -84,9 +87,22 @@ div.header {
     opacity: 1;
 }
 
-a:link, a:visited {
-    color: white;
-    text-decoration: none;
-    font-size: 20pt;
+a.nav:link,
+a.nav:visited,
+a.tooltipanchor:link, 
+a.tooltipanchor:visited {
     font-family: Courier New;
-  }
+    text-decoration: none;
+}
+
+a.nav:link,
+a.nav:visited {
+    color: black;
+    padding: 10px;
+}
+
+a.tooltipanchor:link, 
+a.tooltipanchor:visited {
+    color: white;
+    font-size: 20pt;
+}
